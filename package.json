@@ -1,0 +1,42 @@
+{
+  "name": "mono-poc",
+  "version": "0.0.0",
+  "description": "Poc to test and validate different scenarios of mono-repo",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "analyze:alpha": "source-map-explorer \"./packages/apps/alpha/build/static/js/*.js\"",
+    "analyze:beta": "source-map-explorer \"./packages/apps/beta/build/static/js/*.js\"",
+    "build:alpha": "lerna exec --scope @mono/alpha -- yarn build",
+    "build:beta": "lerna exec --scope @mono/beta -- yarn build",
+    "build:dist-ui": "lerna exec --scope @mono/dist-ui -- yarn build"
+  },
+  "workspaces": [
+    "packages/apps/*",
+    "packages/shared/*"
+  ],
+  "babel-loader-lerna-cra": {
+    "imports": "packages/shared/src-ui",
+    "apps": "packages/apps/beta"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@loadable/babel-plugin": "^5.12.0",
+    "babel-loader-lerna-cra": "^0.1.3",
+    "babel-plugin-css-modules-transform": "^1.6.2",
+    "lerna": "^3.16.4",
+    "webpack-bundle-analyzer": "^3.6.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}

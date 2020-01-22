@@ -1,0 +1,9 @@
+{
+  "name": "@mono/styles",
+  "version": "0.0.0",
+  "main": "dist/global.css",
+  "module": "src/global.css",
+  "dependencies": {
+    "react-universal-component": "^4.0.0"
+  }
+}
