@@ -8,7 +8,9 @@
     "analyze:alpha": "source-map-explorer \"./packages/apps/alpha/build/static/js/*.js\"",
     "analyze:beta": "source-map-explorer \"./packages/apps/beta/build/static/js/*.js\"",
     "build:alpha": "lerna exec --scope @mono/alpha -- yarn build",
+    "start:alpha": "lerna exec --scope @mono/alpha -- yarn start",
     "build:beta": "lerna exec --scope @mono/beta -- yarn build",
+    "start:beta": "lerna exec --scope @mono/beta -- yarn start",
     "build:dist-ui": "lerna exec --scope @mono/dist-ui -- yarn build"
   },
   "workspaces": [

@@ -11,9 +11,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 const Heading = props => {
   const HeadingLevel = `h${props.level}`;
-  return;
-
-  _react.default.createElement(HeadingLevel, null, props.content);
+  return _react.default.createElement(HeadingLevel, null, 'Hello! Alpha App');
 };
 
 var _default = Heading;
