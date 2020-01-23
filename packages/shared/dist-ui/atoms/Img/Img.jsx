@@ -5,6 +5,7 @@ const Img = props => {
   const { src, alt, loading, ...others } = props;
 
   // By default images will get lazy loaded
+  // Adding new comment
   return <img src={src} alt={alt} loading={loading} {...others} />;
 };
 
