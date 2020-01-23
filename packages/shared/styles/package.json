@@ -1,6 +1,6 @@
 {
   "name": "@mono/styles-ui",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "dist/global.css",
   "module": "src/global.css",
   "dependencies": {
