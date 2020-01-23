@@ -1,9 +1,9 @@
 {
   "name": "@mono/beta",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "dependencies": {
     "@babel/core": "7.7.4",
-    "@mono/dist-ui": "^1.0.2",
+    "@mono/dist-ui": "^1.1.0",
     "@mono/src-ui": "^1.0.2",
     "@svgr/webpack": "4.3.3",
     "@testing-library/jest-dom": "^4.2.4",
