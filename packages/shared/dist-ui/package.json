@@ -9,5 +9,8 @@
   "modules": "index.js",
   "sideEffects": false,
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  }
 }

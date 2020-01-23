@@ -5,5 +5,8 @@
   "module": "src/global.css",
   "dependencies": {
     "react-universal-component": "^4.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
