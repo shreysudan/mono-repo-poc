@@ -17,21 +17,26 @@ const Img = props => {
   const {
     src,
     alt,
+    loading,
     ...others
-  } = props;
+  } = props; // By default images will get lazy loaded
+
   return _react.default.createElement("img", _extends({
     src: src,
-    alt: alt
+    alt: alt,
+    loading: loading
   }, others));
 };
 
 Img.propTypes = {
   alt: _propTypes.default.string.isRequired,
-  src: _propTypes.default.oneOfType([_propTypes.default.string.isRequired, _propTypes.default.array.isRequired])
+  src: _propTypes.default.oneOfType([_propTypes.default.string.isRequired, _propTypes.default.array.isRequired]),
+  loading: _propTypes.default.string
 };
 Img.defaultProps = {
   alt: "",
-  src: null
+  src: null,
+  loading: 'lazy'
 };
 var _default = Img;
 exports.default = _default;

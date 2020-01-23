@@ -2,9 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Img = props => {
-  const { src, alt, ...others } = props;
+  const { src, alt, loading, ...others } = props;
 
-  return <img src={src} alt={alt} {...others} />;
+  // By default images will get lazy loaded
+  return <img src={src} alt={alt} loading={loading} {...others} />;
 };
 
 Img.propTypes = {
@@ -12,12 +13,14 @@ Img.propTypes = {
   src: PropTypes.oneOfType([
     PropTypes.string.isRequired,
     PropTypes.array.isRequired
-  ])
+  ]),
+  loading: PropTypes.string
 };
 
 Img.defaultProps = {
   alt: "",
-  src: null
+  src: null,
+  loading: 'lazy'
 };
 
 export default Img;
