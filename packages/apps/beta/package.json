@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "dependencies": {
     "@babel/core": "7.7.4",
-    "@mono/dist-ui": "^1.1.0",
+    "@mono/dist-ui": "^1.0.2",
     "@mono/src-ui": "^1.0.2",
     "@svgr/webpack": "4.3.3",
     "@testing-library/jest-dom": "^4.2.4",
