@@ -1,5 +1,5 @@
 {
-  "name": "@mono/styles",
+  "name": "@mono/styles-ui",
   "version": "0.0.0",
   "main": "dist/global.css",
   "module": "src/global.css",
