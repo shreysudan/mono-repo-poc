@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "description": "Poc to test and validate different scenarios of mono-repo",
   "main": "index.js",
-  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "analyze:alpha": "source-map-explorer \"./packages/apps/alpha/build/static/js/*.js\"",
