@@ -1,6 +1,6 @@
 {
   "name": "@mono/alpha",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "dependencies": {
     "@babel/core": "7.7.4",
     "@mono/dist-ui": "^1.0.0",
