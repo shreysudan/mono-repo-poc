@@ -201,7 +201,7 @@ module.exports = function(webpackEnv) {
       globalObject: 'this',
     },
     optimization: {
-      minimize: isEnvProduction,
+      minimize: false,
       minimizer: [
         // This is only used in production mode
         new TerserPlugin({
@@ -400,7 +400,7 @@ module.exports = function(webpackEnv) {
             // Unlike the application JS, we only compile the standard ES features.
             {
               test: /\.(js|mjs)$/,
-              exclude: /@babel(?:\/|\\{1,2})runtime/,
+              exclude: /@babel(?:\/|\\{1,2})runtime|shared\/dist-ui/,
               loader: require.resolve('babel-loader'),
               options: {
                 babelrc: false,

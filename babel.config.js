@@ -14,15 +14,14 @@ module.exports = api => {
             [
                 '@babel/preset-env',
                 {
-                    targets: !web ? { node: 'current' } : undefined,
-                },
+                    modules: false,
+                }
             ],
             '@babel/preset-react',
         ],
         plugins: [
             '@babel/plugin-proposal-class-properties',
             '@babel/plugin-syntax-dynamic-import',
-            '@loadable/babel-plugin',
             'css-modules-transform',
         ],
     };

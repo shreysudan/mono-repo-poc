@@ -2,11 +2,10 @@
   "name": "@mono/dist-ui",
   "version": "1.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist",
   "scripts": {
-    "build": "babel --root-mode upward atoms --out-dir dist-atoms"
+    "build": "babel --root-mode upward atoms --out-dir dist"
   },
-  "modules": "index.js",
   "sideEffects": false,
   "author": "",
   "license": "ISC",
