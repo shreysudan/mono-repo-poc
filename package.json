@@ -1,15 +1,19 @@
 {
-  "name": "mono-poc",
+  "name": "mono-repo-poc",
   "version": "0.0.0",
+  "private": true,
   "description": "Poc to test and validate different scenarios of mono-repo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "analyze:alpha": "source-map-explorer \"./packages/apps/alpha/build/static/js/*.js\"",
     "analyze:beta": "source-map-explorer \"./packages/apps/beta/build/static/js/*.js\"",
-    "build:alpha": "lerna exec --scope @mono/alpha -- yarn build",
-    "build:beta": "lerna exec --scope @mono/beta -- yarn build",
-    "build:dist-ui": "lerna exec --scope @mono/dist-ui -- yarn build"
+    "build:alpha": "lerna exec --scope @shrey-oth-acc/alpha-mono-repo-poc -- yarn build",
+    "build:beta": "lerna exec --scope @shrey-oth-acc/beta-mono-repo-poc -- yarn build",
+    "build:dist-ui": "lerna exec --scope @shrey-oth-acc/dist-ui-mono-poc -- yarn build",
+    "publish:alpha": "lerna exec --scope @shrey-oth-acc/alpha-mono-repo-poc -- npm publish",
+    "publish:beta": "lerna exec --scope @shrey-oth-acc/beta-mono-repo-poc -- npm publish",
+    "publish:dist-ui": "lerna exec --scope @shrey-oth-acc/dist-ui-mono-poc -- npm publish"
   },
   "workspaces": [
     "packages/apps/*",
