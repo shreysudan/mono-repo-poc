@@ -17,11 +17,13 @@ const Img = props => {
   const {
     src,
     alt,
+    loading,
     ...others
   } = props;
   return _react.default.createElement("img", _extends({
     src: src,
-    alt: alt
+    alt: alt,
+    loading: loading
   }, others));
 };
 
@@ -31,7 +33,8 @@ Img.propTypes = {
 };
 Img.defaultProps = {
   alt: "",
-  src: null
+  src: null,
+  loading: 'lazy'
 };
 var _default = Img;
 exports.default = _default;
