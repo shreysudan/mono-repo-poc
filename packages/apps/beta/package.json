@@ -1,6 +1,6 @@
 {
   "name": "@shrey-oth-acc/beta-mono-repo-poc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "dependencies": {
     "@babel/core": "7.7.4",
     "@mono/src-ui": "^1.0.2",
