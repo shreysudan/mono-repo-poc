@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Img = props => {
   const { src, alt, loading, ...others } = props;
 
-  return <img src={src} alt={alt} loading={loading} {...others} />;
+  return <React.Fragment />;
 };
 
 Img.propTypes = {

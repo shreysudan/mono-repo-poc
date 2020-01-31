@@ -15,7 +15,7 @@
     "build:dist-ui": "lerna exec --scope @shrey-oth-acc/dist-ui-mono-poc -- yarn build",
     "publish:alpha": "lerna exec --scope @shrey-oth-acc/alpha-mono-repo-poc -- npm publish",
     "publish:beta": "lerna exec --scope @shrey-oth-acc/beta-mono-repo-poc -- npm publish",
-    "publish:dist-ui": "lerna exec --scope @shrey-oth-acc/dist-ui-mono-poc -- npm publish"
+    "publish:dist-ui": "lerna exec --scope @shrey-oth-acc/dist-ui-mono-poc -- yarn publish"
   },
   "workspaces": [
     "packages/apps/*",
