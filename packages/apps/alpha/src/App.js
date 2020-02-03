@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from '@mono/dist-ui/dist-atoms/Img/Img';
+import { Img } from '@shrey-oth-acc/dist-ui-mono-poc';
 import logo from './logo.svg';
 import './App.css';
 

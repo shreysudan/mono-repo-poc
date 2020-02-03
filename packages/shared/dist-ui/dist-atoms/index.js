@@ -27,12 +27,6 @@ Object.defineProperty(exports, "Img", {
     return _Img.default;
   }
 });
-Object.defineProperty(exports, "LazyLoad", {
-  enumerable: true,
-  get: function () {
-    return _LazyLoad.default;
-  }
-});
 
 var _AnchorTag = _interopRequireDefault(require("./AnchorTag/AnchorTag"));
 
@@ -41,7 +35,5 @@ var _ErrorMessage = _interopRequireDefault(require("./ErrorMessage/ErrorMessage"
 var _Heading = _interopRequireDefault(require("./Heading/Heading"));
 
 var _Img = _interopRequireDefault(require("./Img/Img"));
-
-var _LazyLoad = _interopRequireDefault(require("./LazyLoad/LazyLoad"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

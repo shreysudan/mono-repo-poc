@@ -1,10 +1,10 @@
 {
-  "name": "@mono/beta",
-  "version": "1.0.2",
+  "name": "@shrey-oth-acc/beta-mono-repo-poc",
+  "version": "1.1.0",
   "dependencies": {
     "@babel/core": "7.7.4",
-    "@mono/dist-ui": "^1.0.2",
     "@mono/src-ui": "^1.0.2",
+    "@shrey-oth-acc/dist-ui-mono-poc": "1.0.8",
     "@svgr/webpack": "4.3.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",

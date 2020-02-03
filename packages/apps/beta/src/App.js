@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import { Img } from '@mono/dist-ui/dist-atoms';
+import { Img } from '@shrey-oth-acc/dist-ui-mono-poc';
 import './App.css';
 
 function App() {

@@ -28,11 +28,12 @@ const ErrorMessage = props => {
   const {
     className,
     isVisible,
+    enabled,
     type,
     ...others
   } = props;
 
-  if (isVisible) {
+  if (isVisible && enabled) {
     return _react.default.createElement("p", _extends({
       className: (0, _classnames.default)(className, type)
     }, others), props.children);
@@ -45,7 +46,8 @@ ErrorMessage.propTypes = {
   children: _propTypes.default.any.isRequired,
   className: _propTypes.default.string,
   isVisible: _propTypes.default.bool,
-  type: _propTypes.default.string
+  type: _propTypes.default.string,
+  enabled: _propTypes.default.bool
 };
 ErrorMessage.defaultProps = {
   children: null,

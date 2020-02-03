@@ -13,9 +13,9 @@ import classnames from "classnames";
  */
 
 const ErrorMessage = props => {
-  const { className, isVisible, type, ...others } = props;
+  const { className, isVisible, enabled, type, ...others } = props;
 
-  if (isVisible) {
+  if (isVisible && enabled) {
     return (
       <p className={classnames(className, type)} {...others}>
         {props.children}
@@ -29,7 +29,8 @@ ErrorMessage.propTypes = {
   children: PropTypes.any.isRequired,
   className: PropTypes.string,
   isVisible: PropTypes.bool,
-  type: PropTypes.string
+  type: PropTypes.string,
+  enabled: PropTypes.bool
 };
 
 ErrorMessage.defaultProps = {
