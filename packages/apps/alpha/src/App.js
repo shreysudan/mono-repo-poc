@@ -21,6 +21,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Img src={'https://via.placeholder.com/150'} className="App-logo" alt="logo" />
     </div>
   );
 }
