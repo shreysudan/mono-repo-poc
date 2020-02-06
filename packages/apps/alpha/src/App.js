@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Img src={logo} className="App-logo" alt="logo" />
+        <Img src={'https://via.placeholder.com/150'} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
