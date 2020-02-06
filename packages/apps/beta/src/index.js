@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// Writing a random comment to enrich git history of this file.
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
